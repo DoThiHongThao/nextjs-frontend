@@ -1,0 +1,7 @@
+runtime: nodejs23  # Hoặc nodejs18, tùy vào phiên bản Node.js mà bạn sử dụng
+
+env_variables:
+  NEXT_PUBLIC_API_URL: "https://your-backend-url"  # Thay thế bằng URL của backend
+
+automatic_scaling:
+  max_instances: 2
