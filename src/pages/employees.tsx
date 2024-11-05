@@ -25,7 +25,7 @@ export default function EmployeeList({ employees }: EmployeeListProps) {
 
 // Fetch dữ liệu từ API Flask trên ngrok
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch('http://1234-5678-91011-12.ngrok.io/employees');  // Thay bằng URL ngrok của bạn
+  const res = await fetch('http://34.136.165.31/employees');  // Thay bằng URL ngrok của bạn
   const employees: Employee[] = await res.json();
 
   return {
